@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'kr7tnm78v=kg1mn*a4ael!rdw!$fr^dl*0#^e=jmx!26h$z5#e'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['www.mesamosretroshop.xyz', 'mesamosretroshop.xyz']
+ALLOWED_HOSTS = ['www.mesamosretroshop.xyz', 'mesamosretroshop.xyz', '127.0.0.1']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'shop.apps.ShopConfig'
 ]
 
 MIDDLEWARE = [
